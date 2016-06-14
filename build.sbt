@@ -3,9 +3,9 @@ organization in ThisBuild := "com.github.dwhjames"
 
 licenses in ThisBuild += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
 
-scalaVersion in ThisBuild := "2.11.7"
+scalaVersion in ThisBuild := "2.11.8"
 
-crossScalaVersions in ThisBuild := Seq("2.10.5", "2.11.7")
+crossScalaVersions in ThisBuild := Seq("2.10.5", "2.11.8")
 
 shellPrompt in ThisBuild := CustomShellPrompt.customPrompt
 
@@ -33,6 +33,10 @@ libraryDependencies ++= Seq(
 
 
 bintrayPackageLabels := Seq("aws", "dynamodb", "s3", "ses", "simpledb", "sns", "sqs", "async", "future")
+
+bintrayOrganization := Some("7thsense")
+publishMavenStyle := true
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 
 
 
